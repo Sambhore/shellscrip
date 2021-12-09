@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo yum install httpd -y
+sudo systemctl enable httpd
+sudo systemctl start httpd
+echo "this is demo webserver" > /var/www/html/index.html
+sudo echo "this is demo webserver" > /var/www/html/index.html
+sudo systemctl start httpd
